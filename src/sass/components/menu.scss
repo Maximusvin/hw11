@@ -1,0 +1,42 @@
+.menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 57px;
+}
+
+.menu__link {
+  font-size: 14px;
+  font-weight: 700;
+  color: $color-white;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: $color-yellow;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    transition: all 0.2s linear;
+  }
+}
+
+.menu__item:hover .menu__link,
+.menu__item:focus .menu__link {
+  color: $color-yellow;
+}
+
+.menu__item:hover .menu__link::after,
+.menu__item:focus .menu__link::after {
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 11px 0;
+}
+
+.footer__item--copy {
+  font-size: 14px;
+  color: $color-grey;
+}
+
+.footer__link {
+  color: $color-violet;
+  transition: all 0.2s linear;
+
+  &:hover,
+  &:focus {
+    text-shadow: 0 0 5px #e66c6c;
+  }
+}

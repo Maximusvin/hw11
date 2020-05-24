@@ -1,0 +1,50 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 230px;
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9)
+    ),
+    url('../images/bg-min.jpg');
+  background-size: cover;
+  background-position: top center;
+  color: $color-white;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9)
+      ),
+      url('../images/bg@2x-min.jpg');
+  }
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  margin-bottom: 180px;
+}
+
+.header__btn {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  margin: 0 auto;
+  padding: 12px 0;
+  border: 3px solid $color-white;
+  width: 170px;
+  transition: all 0.2s linear;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 -3px 5px #575756;
+    transform: translateY(3px);
+    background-color: $color-yellow-second;
+  }
+}

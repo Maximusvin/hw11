@@ -1,0 +1,23 @@
+.control {
+  display: flex;
+  width: 130px;
+  padding-left: 50px;
+}
+
+.control__item:not(:last-child) {
+  margin-right: 42px;
+}
+
+.control__icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: $color-white;
+  transition: all 0.2s linear;
+
+  &:hover,
+  &:focus {
+    fill: $color-yellow;
+    transform: scale(1.2);
+  }
+}

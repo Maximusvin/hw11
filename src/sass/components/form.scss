@@ -1,0 +1,34 @@
+.form {
+  display: flex;
+}
+
+.form__input {
+  display: block;
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  padding-left: 15px;
+  transition: all 0.2s linear;
+  outline: none;
+
+  &::placeholder {
+    font-size: 15px;
+    font-family: $second-font;
+    color: #cccccc;
+    font-weight: 300;
+    font-style: italic;
+    transition: all 0.4s linear;
+  }
+
+  &:focus::placeholder {
+    text-indent: 100%;
+  }
+}
+
+.form__btn {
+  width: 150px;
+  height: 40px;
+  background-color: $color-icon-first;
+  color: $color-white;
+  text-transform: uppercase;
+}
